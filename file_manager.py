@@ -9,7 +9,7 @@ class FileManager:
         pass
 
     # Parses the json file and returns the data as text
-    def parse_json(self, file):
+    def ParseJSON(self, file):
         # read file contents
         with open(file, 'r') as json_file:
             pure_json = json_file.read()
