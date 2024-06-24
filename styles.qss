@@ -1,0 +1,133 @@
+/* General Settings */
+QWidget {
+    background-color: #0d1117;  /* Dark background similar to Robinhood's */
+    color: #c9d1d9;  /* Light text color for readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #161b22;  /* Slightly lighter dark for buttons */
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #21262d;  /* Improved hover effect */
+}
+
+QPushButton:pressed {
+    background-color: #0d1117;  /* Pressed effect */
+}
+
+/* Highlighted Buttons */
+QPushButton#mark_review_btn {
+    background-color: #6e40c9;  /* Light purple for highlighted action */
+    color: #ffffff;
+}
+
+QPushButton#mark_review_btn:hover {
+    background-color: #8a63d2;
+}
+
+QPushButton#mark_review_btn:pressed {
+    background-color: #5e34a9;
+}
+
+/* Labels */
+QLabel {
+    color: #c9d1d9;
+}
+
+/* Line Edits and Text Edits */
+QLineEdit, QTextEdit {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+/* Combo Boxes */
+QComboBox {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #161b22;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    selection-background-color: #6e40c9;  /* Light purple highlight for selected items */
+}
+
+/* Checkboxes */
+QCheckBox {
+    color: #c9d1d9;
+}
+
+QCheckBox::indicator {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #6e40c9;  /* Light purple for checked state */
+    border: 1px solid #6e40c9;
+}
+
+QCheckBox:hover {
+    border: 1px solid #6e40c9;  /* Improved hover effect */
+}
+
+/* Progress Bar */
+QProgressBar {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #6e40c9;  /* Light purple progress */
+    width: 20px;
+}
+
+/* Task Bar Actions (for the menu bar) */
+QMenuBar {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #161b22;
+}
+
+QMenu {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+}
+
+QMenu::item:selected {
+    background-color: #161b22;
+}
+
+/* Additional customization for bigger text in task bar */
+QMenuBar, QMenu {
+    font-size: 14px;
+}

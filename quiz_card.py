@@ -5,19 +5,11 @@
 
 class QuizCard:
     # Called on object instantiation
-    def __init__(self, id, chapter, objective, section, key_point, key_info, needs_review):
+    def __init__(self, id, chapter, objective, section, frontside, backside, needs_review):
         self.id = id
         self.chapter = chapter
         self.objective = objective
         self.section = section
-        self.key_point = key_point
-        self.key_info = key_info
+        self.frontside = frontside
+        self.backside = backside
         self.needs_review = needs_review
-
-    # Displays the key topic of the card
-    def ShowKeyPoint(self):
-        print(self.key_point)
-
-    # Displays the key info of the card
-    def ShowKeyInfo(self):
-        print(self.key_info)

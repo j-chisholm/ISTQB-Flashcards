@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame_6 = QtWidgets.QFrame(parent=self.centralwidget)
-        self.frame_6.setGeometry(QtCore.QRect(0, -10, 1111, 621))
+        self.frame_6.setGeometry(QtCore.QRect(0, -10, 1111, 631))
         self.frame_6.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame_6.setObjectName("frame_6")
@@ -36,30 +36,31 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame_3.setObjectName("frame_3")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_3)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.key_points_textbox = QtWidgets.QTextBrowser(parent=self.frame_3)
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.frame_3)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.card_front_textbox = QtWidgets.QTextBrowser(parent=self.frame_3)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.MinimumExpanding, QtWidgets.QSizePolicy.Policy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.key_points_textbox.sizePolicy().hasHeightForWidth())
-        self.key_points_textbox.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.card_front_textbox.sizePolicy().hasHeightForWidth())
+        self.card_front_textbox.setSizePolicy(sizePolicy)
+        self.card_front_textbox.setMaximumSize(QtCore.QSize(16777215, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
-        self.key_points_textbox.setFont(font)
-        self.key_points_textbox.setObjectName("key_points_textbox")
-        self.horizontalLayout_2.addWidget(self.key_points_textbox)
-        self.details_textbox = QtWidgets.QTextBrowser(parent=self.frame_3)
+        self.card_front_textbox.setFont(font)
+        self.card_front_textbox.setObjectName("card_front_textbox")
+        self.verticalLayout_8.addWidget(self.card_front_textbox)
+        self.card_back_textbox = QtWidgets.QTextBrowser(parent=self.frame_3)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.MinimumExpanding, QtWidgets.QSizePolicy.Policy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.details_textbox.sizePolicy().hasHeightForWidth())
-        self.details_textbox.setSizePolicy(sizePolicy)
+        sizePolicy.setHeightForWidth(self.card_back_textbox.sizePolicy().hasHeightForWidth())
+        self.card_back_textbox.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setPointSize(12)
-        self.details_textbox.setFont(font)
-        self.details_textbox.setObjectName("details_textbox")
-        self.horizontalLayout_2.addWidget(self.details_textbox)
+        self.card_back_textbox.setFont(font)
+        self.card_back_textbox.setObjectName("card_back_textbox")
+        self.verticalLayout_8.addWidget(self.card_back_textbox)
         self.gridLayout_2.addWidget(self.frame_3, 1, 1, 1, 1)
         self.card_progress_label = QtWidgets.QLabel(parent=self.frame_2)
         font = QtGui.QFont()
@@ -91,11 +92,6 @@ class Ui_MainWindow(object):
         self.mark_review_btn.setObjectName("mark_review_btn")
         self.horizontalLayout.addWidget(self.mark_review_btn)
         self.gridLayout_2.addWidget(self.frame, 4, 1, 1, 1)
-        self.frame_7 = QtWidgets.QFrame(parent=self.frame_2)
-        self.frame_7.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
-        self.frame_7.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
-        self.frame_7.setObjectName("frame_7")
-        self.gridLayout_2.addWidget(self.frame_7, 2, 0, 1, 1)
         self.frame_4 = QtWidgets.QFrame(parent=self.frame_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -131,7 +127,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         font.setItalic(False)
-        font.setUnderline(True)
+        font.setUnderline(False)
         self.label.setFont(font)
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
@@ -298,10 +294,33 @@ class Ui_MainWindow(object):
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1112, 22))
         self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(parent=self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuEdit = QtWidgets.QMenu(parent=self.menubar)
+        self.menuEdit.setObjectName("menuEdit")
+        self.menuView = QtWidgets.QMenu(parent=self.menubar)
+        self.menuView.setObjectName("menuView")
+        self.menuSettings = QtWidgets.QMenu(parent=self.menubar)
+        self.menuSettings.setObjectName("menuSettings")
+        self.menuWindow = QtWidgets.QMenu(parent=self.menubar)
+        self.menuWindow.setObjectName("menuWindow")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
+        self.actionOpen_Cards = QtGui.QAction(parent=MainWindow)
+        self.actionOpen_Cards.setObjectName("actionOpen_Cards")
+        self.actionSave_Cards = QtGui.QAction(parent=MainWindow)
+        self.actionSave_Cards.setObjectName("actionSave_Cards")
+        self.actionOpen = QtGui.QAction(parent=MainWindow)
+        self.actionOpen.setObjectName("actionOpen")
+        self.menuFile.addAction(self.actionOpen_Cards)
+        self.menuFile.addAction(self.actionSave_Cards)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuEdit.menuAction())
+        self.menubar.addAction(self.menuView.menuAction())
+        self.menubar.addAction(self.menuSettings.menuAction())
+        self.menubar.addAction(self.menuWindow.menuAction())
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -309,15 +328,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.key_points_textbox.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.details_textbox.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        self.card_front_textbox.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
@@ -325,6 +336,14 @@ class Ui_MainWindow(object):
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:\'Segoe UI\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><br /></p></body></html>"))
+        self.card_back_textbox.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.card_progress_label.setText(_translate("MainWindow", "Card 0/0"))
         self.prev_card_btn.setText(_translate("MainWindow", "Previous Card"))
         self.next_card_btn.setText(_translate("MainWindow", "Next Card"))
@@ -372,6 +391,14 @@ class Ui_MainWindow(object):
         self.refresh_btn.setText(_translate("MainWindow", "Refresh"))
         self.reset_filters_btn.setText(_translate("MainWindow", "Reset All Filters"))
         self.show_review_cards_btn.setText(_translate("MainWindow", "Show All Cards Under Review"))
+        self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuEdit.setTitle(_translate("MainWindow", "Edit"))
+        self.menuView.setTitle(_translate("MainWindow", "View"))
+        self.menuSettings.setTitle(_translate("MainWindow", "Settings"))
+        self.menuWindow.setTitle(_translate("MainWindow", "Window"))
+        self.actionOpen_Cards.setText(_translate("MainWindow", "Open"))
+        self.actionSave_Cards.setText(_translate("MainWindow", "Save"))
+        self.actionOpen.setText(_translate("MainWindow", "Open"))
 
 
 if __name__ == "__main__":

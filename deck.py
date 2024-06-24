@@ -1,5 +1,5 @@
 # Deck class
-# Stores a list of quiz cards and their quiz related information (key_point, key_information)
+# Stores a list of quiz cards and their quiz related information (card front, card back)
 
 class Deck:
     # Called on object instantiation
