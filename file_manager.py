@@ -8,7 +8,7 @@ from quiz_card import QuizCard
 class FileManager:
     # Called on object instantiation
     def __init__(self):
-        pass
+        self.last_open_file = ""
 
     # Save all cards to a file
     def SaveDeckToFile(self, deck, file_name):
@@ -54,6 +54,8 @@ class FileManager:
             json_file.close()
 
             card_data = json.loads(pure_json)
+
+            self.last_open_file = file_name
         except FileNotFoundError:
             return 0
         except json.decoder.JSONDecodeError:
@@ -75,3 +77,4 @@ class FileManager:
             id += 1
 
         return 1
+

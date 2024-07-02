@@ -1,6 +1,6 @@
 # UI Manager class
 # Handles updating the UI
-
+import os.path
 import sys
 
 from deck import Deck
@@ -27,6 +27,8 @@ class AppManager():
 
         self.current_card_index = 0
         self.is_card_detail_visible = True
+
+        self.OpenCardsFile()
 
         self.UpdateUIElements()
         self.UpdateActiveDeck()
@@ -99,7 +101,7 @@ class AppManager():
     def DisplayCurrentCardBackside(self):
         if self.deck.active_cards:
             current_card = self.deck.active_cards[self.current_card_index]
-            self.ui.card_back_textbox.setText(current_card.front)
+            self.ui.card_back_textbox.setText(current_card.backside)
             #update the show details button
             if self.ui.show_details_btn.text() == "Show Details":
                 self.ui.show_details_btn.setText("Hide Details")
@@ -116,12 +118,14 @@ class AppManager():
         if self.deck.active_cards:
             self.current_card_index = (self.current_card_index + 1) % len(self.deck.active_cards)
         self.DisplayCurrentCardFrontside()
+        self.ui.show_details_btn.setText("Show Details")
 
     # retrieves the previous card in the active deck
     def PreviousCard(self):
         if self.deck.active_cards:
             self.current_card_index = (self.current_card_index - 1) % len(self.deck.active_cards)
         self.DisplayCurrentCardFrontside()
+        self.ui.show_details_btn.setText("Show Details")
 
     # updates the dynamic ui elements
     def UpdateUIElements(self):
@@ -152,16 +156,17 @@ class AppManager():
         self.UpdateUIElements()
 
     def SaveCardsToFile(self):
-        # Open a file dialog to select the save file
+        # open a file dialog to select the save file
         file_name, _ = QFileDialog.getSaveFileName(self.MainWindow, "Save File", "", "JSON Files (*.json)")
         if file_name:
             self.file_manager.SaveDeckToFile(self.deck, file_name)
 
     # Save the files in their current
     def OpenCardsFile(self):
-        # Open a file dialog to select a file
+        # open a file dialog to select a file
         file_name, _ = QFileDialog.getOpenFileName(self.MainWindow, "Open File", "", "JSON Files (*.json)")
         if file_name:
             self.file_manager.LoadDeckFromFile(self.deck, file_name)
+            self.file_manager.last_open_file = file_name
             self.UpdateActiveDeck()
             self.UpdateUIElements()

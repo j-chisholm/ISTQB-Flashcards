@@ -1,0 +1,242 @@
+[
+    {
+        "chapter": 1,
+        "objective": 1,
+        "section": 0,
+        "frontside": "What is the purpose of software testing?",
+        "backside": "Software testing assesses software quality and helps reduce the risk of software failure in operation.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 1,
+        "section": 0,
+        "frontside": "Define dynamic testing.",
+        "backside": "Dynamic testing involves the execution of software.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 1,
+        "section": 0,
+        "frontside": "Define static testing.",
+        "backside": "Static testing does not involve executing software and includes reviews and static analysis.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 1,
+        "section": 1,
+        "frontside": "List typical objectives of testing.",
+        "backside": "Evaluating work products, triggering failures and finding defects, ensuring required coverage, reducing risk, verifying requirements, ensuring compliance, providing information to stakeholders, building confidence, and validating completeness and functionality.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 1,
+        "section": 2,
+        "frontside": "What is the difference between testing and debugging?",
+        "backside": "Testing involves identifying defects by triggering failures in a software system, while debugging refers to locating, analyzing, and fixing defects identified during testing.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 2,
+        "section": 0,
+        "frontside": "Why is software testing necessary?",
+        "backside": "Testing is crucial for identifying defects, reducing risks associated with software failures, and improving software quality and reliability.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 2,
+        "section": 1,
+        "frontside": "How does testing contribute to the success of a software project?",
+        "backside": "Effective testing ensures that software meets requirements and expectations, provides crucial information for decision-making, and helps identify and mitigate risks early.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 2,
+        "section": 2,
+        "frontside": "What is the difference between Quality Assurance (QA) and testing?",
+        "backside": "QA encompasses the entire process of ensuring quality standards are followed, including process improvement and audits, while testing is a specific activity within QA focused on identifying defects and verifying requirements.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 2,
+        "section": 3,
+        "frontside": "Define error, defect, and failure.",
+        "backside": "Error: A human action producing an incorrect result.\nDefect: A flaw that can cause a component or system to fail.\nFailure: The inability of a system or component to perform its required functions.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 2,
+        "section": 3,
+        "frontside": "How are errors, defects, and failures related?",
+        "backside": "Errors made by developers can introduce defects into the software. When these defects are executed, they can cause the software to fail, leading to incorrect or unexpected behavior.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "What are the seven testing principles?",
+        "backside": "1. Testing shows the presence of defects.\n2. Exhaustive testing is impossible.\n3. Early testing.\n4. Defect clustering.\n5. Pesticide paradox.\n6. Testing is context dependent.\n7. Absence-of-errors fallacy.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "What does the principle 'Testing shows the presence of defects' mean?",
+        "backside": "Testing can show that defects are present but cannot prove that there are no defects. It reduces the probability of undiscovered defects remaining in the software but cannot guarantee that the software is defect-free.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "Explain the principle 'Exhaustive testing is impossible'.",
+        "backside": "Testing all combinations of inputs and preconditions is not feasible except for trivial cases. Instead, risk and priorities should guide testing efforts.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "Explain the principle 'Early testing'.",
+        "backside": "Testing activities should start as early as possible in the software development lifecycle and should be focused on defined objectives.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "Explain the principle 'Defect clustering'.",
+        "backside": "A small number of modules usually contain most of the defects discovered during pre-release testing or are responsible for most of the operational failures.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "What is the 'Pesticide paradox' principle?",
+        "backside": "If the same tests are repeated over and over again, eventually these tests will no longer find new defects. To overcome this, the tests need to be regularly reviewed and revised, and new and different tests need to be written.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "Explain the principle 'Testing is context dependent'.",
+        "backside": "Testing is done differently in different contexts. For example, safety-critical software is tested differently from an e-commerce site.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 3,
+        "section": 0,
+        "frontside": "What is the 'Absence-of-errors fallacy' principle?",
+        "backside": "Finding and fixing defects does not help if the system built is unusable and does not fulfill the users’ needs and expectations.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "What are the main activities in the test process?",
+        "backside": "Test planning, test monitoring and control, test analysis, test design, test implementation, test execution, and test completion.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "Define test planning.",
+        "backside": "Test planning involves defining the objectives of testing and the approach for meeting those objectives within constraints.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "What is involved in test monitoring and control?",
+        "backside": "Activities to track test progress and test status and to take corrective actions when needed.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "Define test analysis.",
+        "backside": "The process of analyzing the test basis to identify what to test, i.e., defining the test conditions.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "Define test design.",
+        "backside": "Test design involves creating and prioritizing test cases and identifying the necessary test data to support the defined test conditions.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "What is test implementation?",
+        "backside": "Test implementation is the activity where test cases, test data, and other testware are created, assembled, and verified as complete.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "What is involved in test execution?",
+        "backside": "Test execution involves running the test cases according to the planned sequence and logging the outcomes.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 4,
+        "section": 0,
+        "frontside": "What are the activities in test completion?",
+        "backside": "Test completion activities ensure that the testware is archived, the environment is restored, test logs are finalized, and relevant stakeholders are informed of the results.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 5,
+        "section": 0,
+        "frontside": "What are the three main types of testing?",
+        "backside": "Functional testing, non-functional testing, and structural testing.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 5,
+        "section": 0,
+        "frontside": "Define functional testing.",
+        "backside": "Functional testing evaluates the functions of the system and their interactions, ensuring they work according to requirements.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 5,
+        "section": 0,
+        "frontside": "Define non-functional testing.",
+        "backside": "Non-functional testing evaluates system attributes such as performance, usability, reliability, etc.",
+        "needs_review": false
+    },
+    {
+        "chapter": 1,
+        "objective": 5,
+        "section": 0,
+        "frontside": "Define structural testing.",
+        "backside": "Structural testing, also known as white-box testing, examines the internal structure and workings of a program.",
+        "needs_review": false
+    }
+]
