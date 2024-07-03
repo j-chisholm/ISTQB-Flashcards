@@ -166,7 +166,12 @@ class AppManager():
         # open a file dialog to select a file
         file_name, _ = QFileDialog.getOpenFileName(self.MainWindow, "Open File", "", "JSON Files (*.json)")
         if file_name:
+            # reset the deck
+            self.deck.active_cards = []
+            self.deck.inactive_cards = []
+            # load deck from file
             self.file_manager.LoadDeckFromFile(self.deck, file_name)
             self.file_manager.last_open_file = file_name
+            # update the ui
             self.UpdateActiveDeck()
             self.UpdateUIElements()

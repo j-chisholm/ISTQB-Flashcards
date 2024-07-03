@@ -61,7 +61,6 @@ class FileManager:
         except json.decoder.JSONDecodeError:
             return 0
 
-
         # store all cards in the deck and assign index
         id = 0
         for data in card_data:
