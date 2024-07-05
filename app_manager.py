@@ -71,7 +71,7 @@ class AppManager():
         self.deck.section_filter = int(self.ui.section_combobox.currentText())
         self.deck.review_filter = self.ui.needs_review_filter.isChecked()
         self.deck.FilterDeck()
-        self.deck.RandomizeDeck()
+        self.deck.ShuffleDeck()
 
         self.current_card_index = 0
         self.UpdateUIElements()

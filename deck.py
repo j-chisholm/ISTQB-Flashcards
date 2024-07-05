@@ -43,5 +43,6 @@ class Deck:
             self.active_cards.append(card)
             self.inactive_cards.remove(card)
 
-    def RandomizeDeck(self):
+    # randomizes the order of cards in the deck
+    def ShuffleDeck(self):
         random.shuffle(self.active_cards)
