@@ -1,6 +1,8 @@
 # Deck class
 # Stores a list of quiz cards and their quiz related information (card front, card back)
 
+import random
+
 class Deck:
     # Called on object instantiation
     def __init__(self):
@@ -40,3 +42,6 @@ class Deck:
         for card in activate_cards:
             self.active_cards.append(card)
             self.inactive_cards.remove(card)
+
+    def RandomizeDeck(self):
+        random.shuffle(self.active_cards)

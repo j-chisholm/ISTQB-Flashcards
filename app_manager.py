@@ -62,7 +62,7 @@ class AppManager():
         self.ui.reset_filters_btn.clicked.connect(self.ClearFilters)
         self.ui.show_review_cards_btn.clicked.connect(lambda: self.ClearFilters(True))
         self.ui.actionSave_Cards.triggered.connect(self.SaveCardsToFile)
-        self.ui.actionOpen_Cards.triggered.connect((self.OpenCardsFile))
+        self.ui.actionOpen_Cards.triggered.connect(self.OpenCardsFile)
 
     # update the Active deck with user's filters
     def UpdateActiveDeck(self):
@@ -71,6 +71,7 @@ class AppManager():
         self.deck.section_filter = int(self.ui.section_combobox.currentText())
         self.deck.review_filter = self.ui.needs_review_filter.isChecked()
         self.deck.FilterDeck()
+        self.deck.RandomizeDeck()
 
         self.current_card_index = 0
         self.UpdateUIElements()
