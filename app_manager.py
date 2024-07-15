@@ -1,6 +1,5 @@
 # UI Manager class
 # Handles updating the UI
-import os.path
 import sys
 
 from deck import Deck
@@ -10,7 +9,7 @@ from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QFileDialog
 from pyqt_ui import Ui_MainWindow
 
-class AppManager():
+class AppManager:
 
     def __init__(self):
         self.app = QtWidgets.QApplication(sys.argv)
@@ -27,6 +26,7 @@ class AppManager():
 
         self.current_card_index = 0
         self.is_card_detail_visible = True
+        self.show_only_review_cards = False
 
         self.OpenCardsFile()
 
@@ -47,8 +47,7 @@ class AppManager():
         # Apply the stylesheet to the main window
         self.MainWindow.setStyleSheet(stylesheet)
 
-
-    # connect button signals to the appropriate method calls
+    # connect signals to the appropriate method calls
     def ConnectSignals(self):
         self.ui.next_card_btn.clicked.connect(self.NextCard)
         self.ui.prev_card_btn.clicked.connect(self.PreviousCard)
@@ -56,33 +55,31 @@ class AppManager():
         self.ui.chapter_combobox.currentTextChanged.connect(self.UpdateActiveDeck)
         self.ui.objective_combobox.currentTextChanged.connect(self.UpdateActiveDeck)
         self.ui.section_combobox.currentTextChanged.connect(self.UpdateActiveDeck)
-        self.ui.needs_review_filter.clicked.connect(self.UpdateActiveDeck)
         self.ui.refresh_btn.clicked.connect(self.UpdateActiveDeck)
         self.ui.mark_review_btn.clicked.connect(self.ToggleMarkForReview)
         self.ui.reset_filters_btn.clicked.connect(self.ClearFilters)
-        self.ui.show_review_cards_btn.clicked.connect(lambda: self.ClearFilters(True))
+        self.ui.show_review_cards_btn.clicked.connect(self.ShowCardsUnderReview)
         self.ui.actionSave_Cards.triggered.connect(self.SaveCardsToFile)
         self.ui.actionOpen_Cards.triggered.connect(self.OpenCardsFile)
+        self.ui.prefHide_Marked_For_Review.triggered.connect(self.ReviewMarkPreference)
 
     # update the Active deck with user's filters
     def UpdateActiveDeck(self):
         self.deck.chapter_filter = int(self.ui.chapter_combobox.currentText())
         self.deck.objective_filter = int(self.ui.objective_combobox.currentText())
         self.deck.section_filter = int(self.ui.section_combobox.currentText())
-        self.deck.review_filter = self.ui.needs_review_filter.isChecked()
+
         self.deck.FilterDeck()
         self.deck.ShuffleDeck()
 
         self.current_card_index = 0
-        self.UpdateUIElements()
         self.DisplayCurrentCardFrontside()
 
     # resets all filters to default values
-    def ClearFilters(self, show_checked=False):
+    def ClearFilters(self):
         self.ui.chapter_combobox.setCurrentText("0")
         self.ui.objective_combobox.setCurrentText("0")
         self.ui.section_combobox.setCurrentText("0")
-        self.ui.needs_review_filter.setChecked(show_checked)
 
         self.UpdateActiveDeck()
 
@@ -103,7 +100,7 @@ class AppManager():
         if self.deck.active_cards:
             current_card = self.deck.active_cards[self.current_card_index]
             self.ui.card_back_textbox.setText(current_card.backside)
-            #update the show details button
+            # update the show details button
             if self.ui.show_details_btn.text() == "Show Details":
                 self.ui.show_details_btn.setText("Hide Details")
             else:
@@ -112,7 +109,6 @@ class AppManager():
             self.UpdateUIElements()
         else:
             self.ResetUIElements()
-
 
     # retrieves the next card in the active deck
     def NextCard(self):
@@ -145,7 +141,7 @@ class AppManager():
     def ResetUIElements(self):
         # reset the card progress tracker
         self.ui.card_progress_label.setText(f"CARD 0/0")
-        #reset the marked for review label
+        # reset the marked for review label
         self.ui.review_label.setStyleSheet("color:rgba(255, 255, 255, 0)")
 
     # marks the card for review if it is not marked and unmarks it if it is marked.
@@ -176,3 +172,17 @@ class AppManager():
             # update the ui
             self.UpdateActiveDeck()
             self.UpdateUIElements()
+
+    def ReviewMarkPreference(self):
+        if self.ui.prefHide_Marked_For_Review.isChecked():
+            self.deck.hide_review_cards_on_update = True
+        else:
+            self.deck.hide_review_cards_on_update = False
+
+        self.UpdateActiveDeck()
+
+    def ShowCardsUnderReview(self):
+        self.ClearFilters()
+        self.deck.FilterOnlyReviewCards()
+        self.UpdateUIElements()
+

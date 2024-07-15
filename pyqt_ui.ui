@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1112</width>
-    <height>644</height>
+    <width>1100</width>
+    <height>650</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>650</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -545,43 +551,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
                </widget>
               </item>
               <item>
-               <widget class="QFrame" name="frame_11">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_4">
-                 <item>
-                  <widget class="QRadioButton" name="needs_review_filter">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>14</pointsize>
-                     <bold>true</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Needs Review</string>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>20</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
                <widget class="QFrame" name="frame_12">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -598,7 +567,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                     </font>
                    </property>
                    <property name="text">
-                    <string>Refresh</string>
+                    <string>Refresh Cards</string>
                    </property>
                   </widget>
                  </item>
@@ -636,7 +605,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  <item>
                   <widget class="QPushButton" name="show_review_cards_btn">
                    <property name="text">
-                    <string>Show All Cards Under Review</string>
+                    <string>Show Only Cards Under Review</string>
                    </property>
                   </widget>
                  </item>
@@ -660,7 +629,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1112</width>
+     <width>1100</width>
      <height>22</height>
     </rect>
    </property>
@@ -685,6 +654,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="title">
      <string>Settings</string>
     </property>
+    <widget class="QMenu" name="menuPreferences">
+     <property name="title">
+      <string>Preferences</string>
+     </property>
+     <addaction name="prefHide_Marked_For_Review"/>
+    </widget>
+    <addaction name="menuPreferences"/>
    </widget>
    <widget class="QMenu" name="menuWindow">
     <property name="title">
@@ -717,6 +693,20 @@ li.checked::marker { content: &quot;\2612&quot;; }
   <action name="actionOpen">
    <property name="text">
     <string>Open</string>
+   </property>
+  </action>
+  <action name="prefHide_Marked_For_Review">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Hide Marked For Review</string>
    </property>
   </action>
  </widget>
