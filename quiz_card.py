@@ -26,4 +26,3 @@ class QuizCard:
                     return True
         else:
             return False
-        print(self.chapter, other.chapter, sep=' ')

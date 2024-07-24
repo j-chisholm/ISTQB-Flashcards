@@ -79,6 +79,7 @@ class Deck:
     def ShuffleDeck(self):
         random.shuffle(self.active_cards)
 
+    # order the cards in ascending or descending order
     def OrderDeck(self, rev=False):
         deck = self.active_cards + self.inactive_cards
 

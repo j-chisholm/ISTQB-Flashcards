@@ -175,6 +175,7 @@ class AppManager:
             self.UpdateActiveDeck()
             self.UpdateUIElements()
 
+    # set the user's preference for displaying cards marked for review
     def ReviewMarkPreference(self):
         if self.ui.prefHide_Marked_For_Review.isChecked():
             self.deck.hide_review_cards_on_update = True
@@ -183,15 +184,18 @@ class AppManager:
 
         self.UpdateActiveDeck()
 
+    # show only the cards under review
     def ShowCardsUnderReview(self):
         self.ClearFilters()
         self.deck.FilterOnlyReviewCards()
         self.UpdateUIElements()
 
+    # shuffle the deck
     def ShuffleDeck(self):
         self.deck.ShuffleDeck()
         self.UpdateActiveDeck()
 
+    # order the cards
     def OrderDeck(self, rev=False):
         self.deck.OrderDeck(rev=rev)
         self.deck.FilterDeck()
