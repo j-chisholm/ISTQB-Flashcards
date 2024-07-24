@@ -648,7 +648,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <property name="title">
       <string>Order Cards</string>
      </property>
-     <addaction name="actionAscending_2"/>
+     <addaction name="actionAscending"/>
      <addaction name="actionDescending"/>
     </widget>
     <addaction name="menuOrder_Cards"/>
@@ -719,11 +719,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
    </property>
   </action>
   <action name="actionAscending">
-   <property name="text">
-    <string>Ascending</string>
-   </property>
-  </action>
-  <action name="actionAscending_2">
    <property name="text">
     <string>Ascending</string>
    </property>

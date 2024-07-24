@@ -78,3 +78,13 @@ class Deck:
     # randomizes the order of cards in the deck
     def ShuffleDeck(self):
         random.shuffle(self.active_cards)
+
+    def OrderDeck(self, rev=False):
+        deck = self.active_cards + self.inactive_cards
+
+        # sort the cards
+        # updating only active cards would require the user to order the cards after each time they filter the deck
+        deck.sort(reverse=rev)
+        self.active_cards = deck
+        self.inactive_cards = []
+

@@ -13,3 +13,17 @@ class QuizCard:
         self.frontside = frontside
         self.backside = backside
         self.needs_review = needs_review
+
+    # define how each card is compared to another using "<" for the list.sort() method
+    def __lt__(self, other):
+        if self.chapter < other.chapter:
+            return True
+        elif self.chapter == other.chapter:
+            if self.objective < other.objective:
+                return True
+            elif self.objective == other.objective:
+                if self.section <= other.section:
+                    return True
+        else:
+            return False
+        print(self.chapter, other.chapter, sep=' ')

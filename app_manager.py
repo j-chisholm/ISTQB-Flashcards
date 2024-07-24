@@ -63,6 +63,8 @@ class AppManager:
         self.ui.actionOpen_Cards.triggered.connect(self.OpenCardsFile)
         self.ui.prefHide_Marked_For_Review.triggered.connect(self.ReviewMarkPreference)
         self.ui.actionShuffle_Cards.triggered.connect(self.ShuffleDeck)
+        self.ui.actionAscending.triggered.connect(self.OrderDeck)
+        self.ui.actionDescending.triggered.connect(lambda: self.OrderDeck(rev=True))
 
     # update the Active deck with user's filters
     def UpdateActiveDeck(self):
@@ -189,4 +191,8 @@ class AppManager:
     def ShuffleDeck(self):
         self.deck.ShuffleDeck()
         self.UpdateActiveDeck()
-        
+
+    def OrderDeck(self, rev=False):
+        self.deck.OrderDeck(rev=rev)
+        self.deck.FilterDeck()
+        self.UpdateActiveDeck()
