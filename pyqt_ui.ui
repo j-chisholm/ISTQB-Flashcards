@@ -644,6 +644,15 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <property name="title">
      <string>Edit</string>
     </property>
+    <widget class="QMenu" name="menuOrder_Cards">
+     <property name="title">
+      <string>Order Cards</string>
+     </property>
+     <addaction name="actionAscending_2"/>
+     <addaction name="actionDescending"/>
+    </widget>
+    <addaction name="menuOrder_Cards"/>
+    <addaction name="actionShuffle_Cards"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -707,6 +716,26 @@ li.checked::marker { content: &quot;\2612&quot;; }
    </property>
    <property name="text">
     <string>Hide Marked For Review</string>
+   </property>
+  </action>
+  <action name="actionAscending">
+   <property name="text">
+    <string>Ascending</string>
+   </property>
+  </action>
+  <action name="actionAscending_2">
+   <property name="text">
+    <string>Ascending</string>
+   </property>
+  </action>
+  <action name="actionDescending">
+   <property name="text">
+    <string>Descending</string>
+   </property>
+  </action>
+  <action name="actionShuffle_Cards">
+   <property name="text">
+    <string>Shuffle Cards</string>
    </property>
   </action>
  </widget>

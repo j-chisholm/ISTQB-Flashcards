@@ -62,6 +62,7 @@ class AppManager:
         self.ui.actionSave_Cards.triggered.connect(self.SaveCardsToFile)
         self.ui.actionOpen_Cards.triggered.connect(self.OpenCardsFile)
         self.ui.prefHide_Marked_For_Review.triggered.connect(self.ReviewMarkPreference)
+        self.ui.actionShuffle_Cards.triggered.connect(self.ShuffleDeck)
 
     # update the Active deck with user's filters
     def UpdateActiveDeck(self):
@@ -70,7 +71,6 @@ class AppManager:
         self.deck.section_filter = int(self.ui.section_combobox.currentText())
 
         self.deck.FilterDeck()
-        self.deck.ShuffleDeck()
 
         self.current_card_index = 0
         self.DisplayCurrentCardFrontside()
@@ -186,3 +186,7 @@ class AppManager:
         self.deck.FilterOnlyReviewCards()
         self.UpdateUIElements()
 
+    def ShuffleDeck(self):
+        self.deck.ShuffleDeck()
+        self.UpdateActiveDeck()
+        
