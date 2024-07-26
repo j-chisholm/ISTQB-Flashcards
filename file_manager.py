@@ -74,7 +74,6 @@ class FileManager:
                 data["needs_review"]
             )))
             id += 1
-        deck.ShuffleDeck()
 
         return 1
 

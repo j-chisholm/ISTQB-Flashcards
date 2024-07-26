@@ -91,6 +91,10 @@ class AppManager:
             current_card = self.deck.active_cards[self.current_card_index]
             self.ui.card_front_textbox.setText(current_card.frontside)
             self.UpdateUIElements()
+
+            # set the Show/Hide Details button to default state
+            self.ui.show_details_btn.setText("Show Details")
+
         else:
             self.ui.card_front_textbox.setText("No cards matching those filters...")
             self.ResetUIElements()
@@ -154,13 +158,14 @@ class AppManager:
 
         self.UpdateUIElements()
 
+    # save the current deck to a file
     def SaveCardsToFile(self):
         # open a file dialog to select the save file
         file_name, _ = QFileDialog.getSaveFileName(self.MainWindow, "Save File", "", "JSON Files (*.json)")
         if file_name:
             self.file_manager.SaveDeckToFile(self.deck, file_name)
 
-    # Save the files in their current
+    # opens a card file (json format)
     def OpenCardsFile(self):
         # open a file dialog to select a file
         file_name, _ = QFileDialog.getOpenFileName(self.MainWindow, "Open File", "", "JSON Files (*.json)")
