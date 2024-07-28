@@ -582,7 +582,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                     </font>
                    </property>
                    <property name="text">
-                    <string>Refresh Cards</string>
+                    <string>Refresh</string>
                    </property>
                   </widget>
                  </item>
@@ -724,7 +724,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <bool>true</bool>
    </property>
    <property name="checked">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="enabled">
     <bool>true</bool>

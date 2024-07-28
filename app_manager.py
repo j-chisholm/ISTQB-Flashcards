@@ -71,6 +71,7 @@ class AppManager:
         self.deck.chapter_filter = self.ui.chapter_combobox.currentText()
         self.deck.objective_filter = self.ui.objective_combobox.currentText()
         self.deck.section_filter = self.ui.section_combobox.currentText()
+        self.deck.hide_review_cards_on_update = self.ui.prefHide_Marked_For_Review.isChecked()
 
         self.deck.FilterDeck()
 
@@ -192,6 +193,7 @@ class AppManager:
     # show only the cards under review
     def ShowCardsUnderReview(self):
         self.ClearFilters()
+        self.ui.prefHide_Marked_For_Review.setChecked(False)
         self.deck.FilterOnlyReviewCards()
         self.UpdateUIElements()
 

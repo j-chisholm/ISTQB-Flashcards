@@ -37,10 +37,6 @@ class Deck:
             self.inactive_cards.remove(card)
 
     def CardMeetsFilter(self, card):
-        print(f"Chapter: {type(self.chapter_filter)} - Card: {type(card.chapter)}")
-        #print(f"Chapter: {self.objective_filter} - Card: {card.objective}")
-        #print(f"Chapter: {self.section_filter} - Card: {card.section}")
-
         if self.hide_review_cards_on_update and card.needs_review:
             return False
 
@@ -50,13 +46,14 @@ class Deck:
 
     # filter the deck to show only cards under review
     def FilterOnlyReviewCards(self):
+        activate_cards = []
         deactivate_cards = []
-        # set cards to deactivate
+
+        # set cards to deactivate                                                       
         for card in self.active_cards:
             if not card.needs_review:
                 deactivate_cards.append(card)
 
-        activate_cards = []
         # set cards to activate
         for card in self.inactive_cards:
             if card.needs_review:
