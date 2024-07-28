@@ -8,40 +8,24 @@ class Deck:
     def __init__(self):
         self.active_cards = []
         self.inactive_cards = []
-        self.chapter_filter = 0
-        self.objective_filter = 0
-        self.section_filter = 0
+        self.chapter_filter = "Any"
+        self.objective_filter = "Any"
+        self.section_filter = "Any"
         self.hide_review_cards_on_update = False
 
     def FilterDeck(self):
         deactivate_cards = []
+        activate_cards = []
         # search active_cards for cards that do not meet the filter conditions
         for card in self.active_cards:
-            if not ((self.chapter_filter == 0 or card.chapter == self.chapter_filter) and
-                    (self.objective_filter == 0 or card.objective == self.objective_filter) and
-                    (self.section_filter == 0 or card.section == self.section_filter)):
+            if not self.CardMeetsFilter(card):
                 # add card to the list to deactivate
                 deactivate_cards.append(card)
-            else:  # card meets filter conditions
-                # filter out review cards based on user preference
-                if self.hide_review_cards_on_update:
-                    if card.needs_review:
-                        deactivate_cards.append(card)
 
-        activate_cards = []
         # search inactive_cards for cards that meet the filter conditions
         for card in self.inactive_cards:
-            if ((self.chapter_filter == 0 or card.chapter == self.chapter_filter) and
-                    (self.objective_filter == 0 or card.objective == self.objective_filter) and
-                    (self.section_filter == 0 or card.section == self.section_filter)):
-
-                # filter out review cards based on user preference
-                if self.hide_review_cards_on_update:
-                    if card.needs_review:
-                        deactivate_cards.append(card)
-                else:
-                    # add card to the list to activate
-                    activate_cards.append(card)
+            if self.CardMeetsFilter(card):
+                activate_cards.append(card)
 
         # move cards to the appropriate list
         for card in deactivate_cards:
@@ -51,6 +35,18 @@ class Deck:
         for card in activate_cards:
             self.active_cards.append(card)
             self.inactive_cards.remove(card)
+
+    def CardMeetsFilter(self, card):
+        print(f"Chapter: {type(self.chapter_filter)} - Card: {type(card.chapter)}")
+        #print(f"Chapter: {self.objective_filter} - Card: {card.objective}")
+        #print(f"Chapter: {self.section_filter} - Card: {card.section}")
+
+        if self.hide_review_cards_on_update and card.needs_review:
+            return False
+
+        return ((self.chapter_filter == "Any" or card.chapter == self.chapter_filter) and
+                (self.objective_filter == "Any" or card.objective == self.objective_filter) and
+                (self.section_filter == "Any" or card.section == self.section_filter))
 
     # filter the deck to show only cards under review
     def FilterOnlyReviewCards(self):

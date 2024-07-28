@@ -68,9 +68,9 @@ class AppManager:
 
     # update the Active deck with user's filters
     def UpdateActiveDeck(self):
-        self.deck.chapter_filter = int(self.ui.chapter_combobox.currentText())
-        self.deck.objective_filter = int(self.ui.objective_combobox.currentText())
-        self.deck.section_filter = int(self.ui.section_combobox.currentText())
+        self.deck.chapter_filter = self.ui.chapter_combobox.currentText()
+        self.deck.objective_filter = self.ui.objective_combobox.currentText()
+        self.deck.section_filter = self.ui.section_combobox.currentText()
 
         self.deck.FilterDeck()
 
@@ -79,9 +79,9 @@ class AppManager:
 
     # resets all filters to default values
     def ClearFilters(self):
-        self.ui.chapter_combobox.setCurrentText("0")
-        self.ui.objective_combobox.setCurrentText("0")
-        self.ui.section_combobox.setCurrentText("0")
+        self.ui.chapter_combobox.setCurrentText("Any")
+        self.ui.objective_combobox.setCurrentText("Any")
+        self.ui.section_combobox.setCurrentText("Any")
 
         self.UpdateActiveDeck()
 

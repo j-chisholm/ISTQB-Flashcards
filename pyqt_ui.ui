@@ -270,7 +270,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <widget class="QComboBox" name="chapter_combobox">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
+                     <width>65</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -286,6 +286,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
                      <bold>false</bold>
                     </font>
                    </property>
+                   <item>
+                    <property name="text">
+                     <string>Any</string>
+                    </property>
+                   </item>
                    <item>
                     <property name="text">
                      <string>0</string>
@@ -372,7 +377,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <widget class="QComboBox" name="objective_combobox">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
+                     <width>65</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -388,6 +393,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
                      <bold>false</bold>
                     </font>
                    </property>
+                   <item>
+                    <property name="text">
+                     <string>Any</string>
+                    </property>
+                   </item>
                    <item>
                     <property name="text">
                      <string>0</string>
@@ -474,7 +484,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   <widget class="QComboBox" name="section_combobox">
                    <property name="minimumSize">
                     <size>
-                     <width>0</width>
+                     <width>65</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -490,6 +500,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
                      <bold>false</bold>
                     </font>
                    </property>
+                   <item>
+                    <property name="text">
+                     <string>Any</string>
+                    </property>
+                   </item>
                    <item>
                     <property name="text">
                      <string>0</string>
