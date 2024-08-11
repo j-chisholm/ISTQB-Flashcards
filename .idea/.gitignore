@@ -1,3 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+savefile.json
+testJSON.json
+git-filter-repo
