@@ -3,16 +3,16 @@
   "chapter":"1",
   "objective":"1",
   "section":"0",
-  "frontside":"Define dynamic testing.",
-  "backside":"Dynamic testing involves the execution of software.",
+  "frontside":"What is the purpose of software testing?",
+  "backside":"Software testing assesses software quality. It is crucial for identifying defects, reducing risks associated with software failures, and improving software quality and reliability.",
   "needs_review":false
  },
  {
   "chapter":"1",
   "objective":"1",
   "section":"0",
-  "frontside":"What is the purpose of software testing?",
-  "backside":"Software testing assesses software quality. It is crucial for identifying defects, reducing risks associated with software failures, and improving software quality and reliability.",
+  "frontside":"Define dynamic testing.",
+  "backside":"Dynamic testing involves the execution of software.",
   "needs_review":false
  },
  {
@@ -59,16 +59,8 @@
   "chapter":"1",
   "objective":"3",
   "section":"0",
-  "frontside":"Explain the principle 'Defect clustering'.",
-  "backside":"A small number of modules usually contain most of the defects discovered during pre-release testing or are responsible for most of the operational failures.",
-  "needs_review":false
- },
- {
-  "chapter":"1",
-  "objective":"3",
-  "section":"0",
-  "frontside":"What is the 'Absence-of-errors fallacy' principle?",
-  "backside":"Finding and fixing defects does not help if the system built is unusable and does not fulfill the user's needs and expectations.",
+  "frontside":"Explain the principle 'Early testing'.",
+  "backside":"Testing activities should start as early as possible in the software development lifecycle and should be focused on defined objectives. Defects that are removed early in the process will not cause subsequent defects in derived work products.",
   "needs_review":false
  },
  {
@@ -83,6 +75,14 @@
   "chapter":"1",
   "objective":"3",
   "section":"0",
+  "frontside":"Explain the principle 'Testing is context dependent'.",
+  "backside":"Testing is done differently in different contexts. For example, safety-critical software is tested differently from an e-commerce site.",
+  "needs_review":false
+ },
+ {
+  "chapter":"1",
+  "objective":"3",
+  "section":"0",
   "frontside":"What is the 'Pesticide paradox' principle?",
   "backside":"If the same tests are repeated over and over again, eventually these tests will no longer find new defects. To overcome this, the tests need to be regularly reviewed and revised, and new and different tests need to be written.",
   "needs_review":false
@@ -91,8 +91,16 @@
   "chapter":"1",
   "objective":"3",
   "section":"0",
-  "frontside":"Explain the principle 'Early testing'.",
-  "backside":"Testing activities should start as early as possible in the software development lifecycle and should be focused on defined objectives. Defects that are removed early in the process will not cause subsequent defects in derived work products.",
+  "frontside":"What is the 'Absence-of-errors fallacy' principle?",
+  "backside":"Finding and fixing defects does not help if the system built is unusable and does not fulfill the user's needs and expectations.",
+  "needs_review":false
+ },
+ {
+  "chapter":"1",
+  "objective":"3",
+  "section":"0",
+  "frontside":"Explain the principle 'Defect clustering'.",
+  "backside":"A small number of modules usually contain most of the defects discovered during pre-release testing or are responsible for most of the operational failures.",
   "needs_review":false
  },
  {
@@ -113,26 +121,10 @@
  },
  {
   "chapter":"1",
-  "objective":"3",
-  "section":"0",
-  "frontside":"Explain the principle 'Testing is context dependent'.",
-  "backside":"Testing is done differently in different contexts. For example, safety-critical software is tested differently from an e-commerce site.",
-  "needs_review":false
- },
- {
-  "chapter":"1",
   "objective":"4",
   "section":"0",
-  "frontside":"What is involved in test execution?",
-  "backside":"Test execution involves running the test cases according to the planned sequence and logging the outcomes.",
-  "needs_review":false
- },
- {
-  "chapter":"1",
-  "objective":"4",
-  "section":"0",
-  "frontside":"What are the main activities in the test process?",
-  "backside":"Test planning, test monitoring and control, test analysis, test design, test implementation, test execution, and test completion.",
+  "frontside":"What are the activities in test completion?",
+  "backside":"Test completion activities ensure that the testware is archived, the environment is restored, test logs are finalized, and relevant stakeholders are informed of the results.",
   "needs_review":false
  },
  {
@@ -141,6 +133,14 @@
   "section":"0",
   "frontside":"Define test planning.",
   "backside":"Test planning involves defining the objectives of testing and the approach for meeting those objectives within constraints.",
+  "needs_review":false
+ },
+ {
+  "chapter":"1",
+  "objective":"4",
+  "section":"0",
+  "frontside":"Define test design.",
+  "backside":"Test design involves creating and prioritizing test cases and identifying the necessary test data to support the defined test conditions.",
   "needs_review":false
  },
  {
@@ -171,24 +171,16 @@
   "chapter":"1",
   "objective":"4",
   "section":"0",
-  "frontside":"Define test design.",
-  "backside":"Test design involves creating and prioritizing test cases and identifying the necessary test data to support the defined test conditions.",
+  "frontside":"What are the main activities in the test process?",
+  "backside":"Test planning, test monitoring and control, test analysis, test design, test implementation, test execution, and test completion.",
   "needs_review":false
  },
  {
   "chapter":"1",
   "objective":"4",
   "section":"0",
-  "frontside":"What are the activities in test completion?",
-  "backside":"Test completion activities ensure that the testware is archived, the environment is restored, test logs are finalized, and relevant stakeholders are informed of the results.",
-  "needs_review":false
- },
- {
-  "chapter":"1",
-  "objective":"5",
-  "section":"1",
-  "frontside":"Why are analytical skills important for testing?",
-  "backside":"Analytical skills are important for identifying defects, understanding complex systems, and creating effective test cases.",
+  "frontside":"What is involved in test execution?",
+  "backside":"Test execution involves running the test cases according to the planned sequence and logging the outcomes.",
   "needs_review":false
  },
  {
@@ -197,6 +189,14 @@
   "section":"1",
   "frontside":"What role does domain knowledge play in testing?",
   "backside":"Domain knowledge helps testers understand the business context, which leads to more relevant and effective test cases.",
+  "needs_review":false
+ },
+ {
+  "chapter":"1",
+  "objective":"5",
+  "section":"1",
+  "frontside":"Why are analytical skills important for testing?",
+  "backside":"Analytical skills are important for identifying defects, understanding complex systems, and creating effective test cases.",
   "needs_review":false
  },
  {
@@ -227,16 +227,16 @@
   "chapter":"1",
   "objective":"5",
   "section":"2",
-  "frontside":"How does collaboration enhance the testing process?",
-  "backside":"Collaboration improves communication, facilitates knowledge sharing, and helps to quickly resolve issues, leading to better quality software.",
+  "frontside":"What is the whole team approach?",
+  "backside":"The whole team approach involves all team member across all teams. It ensures that quality is everyone's responsibility and leverages the diverse skills and perspectives of the entire team to find defects early.",
   "needs_review":false
  },
  {
   "chapter":"1",
   "objective":"5",
   "section":"2",
-  "frontside":"What is the whole team approach?",
-  "backside":"The whole team approach involves all team member across all teams. It ensures that quality is everyone's responsibility and leverages the diverse skills and perspectives of the entire team to find defects early.",
+  "frontside":"How does collaboration enhance the testing process?",
+  "backside":"Collaboration improves communication, facilitates knowledge sharing, and helps to quickly resolve issues, leading to better quality software.",
   "needs_review":false
  },
  {
@@ -251,16 +251,16 @@
   "chapter":"1",
   "objective":"5",
   "section":"3",
-  "frontside":"What are the potential drawbacks of independent testing?",
-  "backside":"Drawbacks can include communication challenges, a lack of understanding of the project context, and potential delays if the independent testers are not integrated well with the development team.",
+  "frontside":"What is meant by independence of testing?",
+  "backside":"Independence of testing refers to having tests conducted by someone who is not the author of the code being tested to avoid bias.",
   "needs_review":false
  },
  {
   "chapter":"1",
   "objective":"5",
   "section":"3",
-  "frontside":"What is meant by independence of testing?",
-  "backside":"Independence of testing refers to having tests conducted by someone who is not the author of the code being tested to avoid bias.",
+  "frontside":"What are the potential drawbacks of independent testing?",
+  "backside":"Drawbacks can include communication challenges, a lack of understanding of the project context, and potential delays if the independent testers are not integrated well with the development team.",
   "needs_review":false
  },
  {
@@ -275,8 +275,8 @@
   "chapter":"2",
   "objective":"1",
   "section":"0",
-  "frontside":"What is the Sequential Development Model? Name an example.",
-  "backside":"The sequential model, also known as the waterfall model, is a linear, sequential approach to the software development life cycle (SDLC). In this model, each phase of the project must be completed before moving on to the next, and there is no overlap between phases.\nE.g. V-Model",
+  "frontside":"What is the Incremental Development Model? Name an example.",
+  "backside":"The incremental development model breaks down the development process into smaller, more manageable parts called increments. Each increment is a standalone part that goes through the design, functional requirements, execution, and testing cycle. The increments build on the previous version, adding new functionality and improvements step by step until the final product is delivered.\nE.g Unified Process",
   "needs_review":false
  },
  {
@@ -291,8 +291,16 @@
   "chapter":"2",
   "objective":"1",
   "section":"0",
-  "frontside":"What is the Incremental Development Model? Name an example.",
-  "backside":"The incremental development model breaks down the development process into smaller, more manageable parts called increments. Each increment is a standalone part that goes through the design, functional requirements, execution, and testing cycle. The increments build on the previous version, adding new functionality and improvements step by step until the final product is delivered.\nE.g Unified Process",
+  "frontside":"What is the Sequential Development Model? Name an example.",
+  "backside":"The sequential model, also known as the waterfall model, is a linear, sequential approach to the software development life cycle (SDLC). In this model, each phase of the project must be completed before moving on to the next, and there is no overlap between phases.\nE.g. V-Model",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"1",
+  "section":"3",
+  "frontside":"What are the benefits of using testing to drive software development?",
+  "backside":"Benefits include improved software quality, reduced development costs, faster time to market, and increased customer satisfaction.",
   "needs_review":false
  },
  {
@@ -301,22 +309,6 @@
   "section":"3",
   "frontside":"Define TDD",
   "backside":"TDD is Test-Driven Development. Tests are written first, and the code is written to satisfy the tests.",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"1",
-  "section":"3",
-  "frontside":"Define ATDD",
-  "backside":"ATDD is Acceptance Test-Driven Development. Tests are derived from acceptance criteria and written before the part of the application is developed to staisfy the tests.",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"1",
-  "section":"3",
-  "frontside":"How does early testing feedback influence software development?",
-  "backside":"Early testing feedback helps developers identify and fix issues quickly, leading to fewer defects, better design decisions, and more efficient development processes.",
   "needs_review":false
  },
  {
@@ -339,8 +331,24 @@
   "chapter":"2",
   "objective":"1",
   "section":"3",
-  "frontside":"What are the benefits of using testing to drive software development?",
-  "backside":"Benefits include improved software quality, reduced development costs, faster time to market, and increased customer satisfaction.",
+  "frontside":"How does early testing feedback influence software development?",
+  "backside":"Early testing feedback helps developers identify and fix issues quickly, leading to fewer defects, better design decisions, and more efficient development processes.",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"1",
+  "section":"3",
+  "frontside":"Define ATDD",
+  "backside":"ATDD is Acceptance Test-Driven Development. Tests are derived from acceptance criteria and written before the part of the application is developed to staisfy the tests.",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What are the benefits of integrating testing into DevOps practices?",
+  "backside":"Benefits include faster feedback, reduced risk of defects in production, increased view on non-functional quality characteristics, higher quality software delivered more quickly, less manual testing, and reduced risk in regression.",
   "needs_review":false
  },
  {
@@ -363,14 +371,6 @@
   "chapter":"2",
   "objective":"1",
   "section":"4",
-  "frontside":"What are the benefits of integrating testing into DevOps practices?",
-  "backside":"Benefits include faster feedback, reduced risk of defects in production, increased view on non-functional quality characteristics, higher quality software delivered more quickly, less manual testing, and reduced risk in regression.",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"1",
-  "section":"4",
   "frontside":"What are the key principles of DevOps that impact testing?",
   "backside":"Key principles include continuous integration, continuous testing, continuous delivery, and collaboration between development and operations teams.",
   "needs_review":false
@@ -379,16 +379,16 @@
   "chapter":"2",
   "objective":"1",
   "section":"5",
-  "frontside":"What is the Shift Left approach in testing?",
-  "backside":"The Shift Left approach involves moving testing activities earlier in the software development lifecycle to identify and address defects sooner. The Shift Left approach reduces the cost and effort of later-stage corrections and improves overall software quality.",
+  "frontside":"How is the Shift Left approach implemented in software development?",
+  "backside":"The Shift Left approach is implemented by integrating testing activities into early phases of development, reviewing specification from the perspective of testing, writing test cases before the code is written, using CI and CD, completing static analysis of the code prior to dynamic testing, and performing non-functional testing starting at the component test level.",
   "needs_review":false
  },
  {
   "chapter":"2",
   "objective":"1",
   "section":"5",
-  "frontside":"How is the Shift Left approach implemented in software development?",
-  "backside":"The Shift Left approach is implemented by integrating testing activities into early phases of development, reviewing specification from the perspective of testing, writing test cases before the code is written, using CI and CD, completing static analysis of the code prior to dynamic testing, and performing non-functional testing starting at the component test level.",
+  "frontside":"What is the Shift Left approach in testing?",
+  "backside":"The Shift Left approach involves moving testing activities earlier in the software development lifecycle to identify and address defects sooner. The Shift Left approach reduces the cost and effort of later-stage corrections and improves overall software quality.",
   "needs_review":false
  },
  {
@@ -411,14 +411,6 @@
   "chapter":"2",
   "objective":"2",
   "section":"0",
-  "frontside":"What are the different test levels in software testing?",
-  "backside":"The different test levels in software testing are: \n- Unit Testing\n- Unit Integration Testing\n- System Testing\n- System Integration Testing\n- Acceptance Testing",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"2",
-  "section":"0",
   "frontside":"What are test levels?",
   "backside":"Test levels are groups of test activities that are organized and managed together.",
   "needs_review":false
@@ -427,24 +419,16 @@
   "chapter":"2",
   "objective":"2",
   "section":"0",
+  "frontside":"What are the different test levels in software testing?",
+  "backside":"The different test levels in software testing are: \n- Unit Testing\n- Unit Integration Testing\n- System Testing\n- System Integration Testing\n- Acceptance Testing",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"2",
+  "section":"0",
   "frontside":"What are test types?",
   "backside":"Test types are groups of test activities related to specific quality characteristics and most of those test activities can be performed at every test level.",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"2",
-  "section":"1",
-  "frontside":"What is System Integration Testing?",
-  "backside":"System Integration Testing focuses on testing the interfaces of a system and ensuring different parts/subsystems work together as a whole.",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"2",
-  "section":"1",
-  "frontside":"What is Acceptance Testing?",
-  "backside":"Acceptance Testing is a level of software testing where a system is tested for acceptability. The purpose is to evaluate the system's compliance with the business requirements and assess whether it is acceptable for delivery.",
   "needs_review":false
  },
  {
@@ -474,9 +458,17 @@
  {
   "chapter":"2",
   "objective":"2",
-  "section":"2",
-  "frontside":"Define Black-Box testing.",
-  "backside":"Black-box testing, is specification-based and derives tests from external documentation. The main objective is to check the system's behavior against specifications.",
+  "section":"1",
+  "frontside":"What is Acceptance Testing?",
+  "backside":"Acceptance Testing is a level of software testing where a system is tested for acceptability. The purpose is to evaluate the system's compliance with the business requirements and assess whether it is acceptable for delivery.",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"2",
+  "section":"1",
+  "frontside":"What is System Integration Testing?",
+  "backside":"System Integration Testing focuses on testing the interfaces of a system and ensuring different parts/subsystems work together as a whole.",
   "needs_review":false
  },
  {
@@ -491,16 +483,24 @@
   "chapter":"2",
   "objective":"2",
   "section":"2",
-  "frontside":"Define Functional Testing.",
-  "backside":"Functional Testing focuses on verifying that the software functions as expected, according to the requirements and specifications.",
+  "frontside":"What does Non-functional Testing evaluate?",
+  "backside":"Non-functional Testing evaluates aspects of the software such as performance, usability, reliability, and other quality attributes that are not related to specific behaviors or functions.",
   "needs_review":false
  },
  {
   "chapter":"2",
   "objective":"2",
   "section":"2",
-  "frontside":"What does Non-functional Testing evaluate?",
-  "backside":"Non-functional Testing evaluates aspects of the software such as performance, usability, reliability, and other quality attributes that are not related to specific behaviors or functions.",
+  "frontside":"Define Black-Box testing.",
+  "backside":"Black-box testing, is specification-based and derives tests from external documentation. The main objective is to check the system's behavior against specifications.",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"2",
+  "section":"2",
+  "frontside":"Define Functional Testing.",
+  "backside":"Functional Testing focuses on verifying that the software functions as expected, according to the requirements and specifications.",
   "needs_review":false
  },
  {
@@ -515,16 +515,16 @@
   "chapter":"2",
   "objective":"2",
   "section":"3",
-  "frontside":"What is Confirmation Testing?",
-  "backside":"Confirmation Testing, also known as re-testing, involves running after a defect has been reported as fixed, to verify that the issue has indeed been resolved.",
+  "frontside":"Why is Regression Testing important?",
+  "backside":"Regression Testing is important because it helps to identify any unintended side effects of changes, ensuring that the software continues to function correctly after modifications.",
   "needs_review":false
  },
  {
   "chapter":"2",
   "objective":"2",
   "section":"3",
-  "frontside":"Why is Regression Testing important?",
-  "backside":"Regression Testing is important because it helps to identify any unintended side effects of changes, ensuring that the software continues to function correctly after modifications.",
+  "frontside":"What is Confirmation Testing?",
+  "backside":"Confirmation Testing, also known as re-testing, involves running after a defect has been reported as fixed, to verify that the issue has indeed been resolved.",
   "needs_review":false
  },
  {
@@ -547,14 +547,6 @@
   "chapter":"2",
   "objective":"3",
   "section":"0",
-  "frontside":"What are the key aspects of Maintenance Testing?",
-  "backside":"Key aspects of Maintenance Testing include:\n- Regression testing\n- Testing of new functionality\n- Testing the impact of changes in the operational environment",
-  "needs_review":false
- },
- {
-  "chapter":"2",
-  "objective":"3",
-  "section":"0",
   "frontside":"What is the difference between Maintenance Testing and Development Testing?",
   "backside":"Maintenance Testing focuses on changes made to an existing operational system and their impact, while Development Testing focuses on new software being developed.",
   "needs_review":false
@@ -565,6 +557,22 @@
   "section":"0",
   "frontside":"What elements does the scope Maintenance Testing typically depend on?",
   "backside":"- The degree of risk of the change\n- The size of the existing system\n- The size of the change",
+  "needs_review":false
+ },
+ {
+  "chapter":"2",
+  "objective":"3",
+  "section":"0",
+  "frontside":"What are the key aspects of Maintenance Testing?",
+  "backside":"Key aspects of Maintenance Testing include:\n- Regression testing\n- Testing of new functionality\n- Testing the impact of changes in the operational environment",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"1",
+  "section":"0",
+  "frontside":"What are the differences between Static Analysis and Reviews?",
+  "backside":"Reviews are a manual or semi-automated process in which one or more people evaluate quality and identify defects in a wide array of artifacts which include, but are not limited to documents, designs and code.\nStatic Analysis is an automated process that uses tools to analyze the code's syntax or structure.",
   "needs_review":false
  },
  {
@@ -587,16 +595,16 @@
   "chapter":"3",
   "objective":"1",
   "section":"0",
-  "frontside":"What are the differences between Static Analysis and Reviews?",
-  "backside":"Reviews are a manual or semi-automated process in which one or more people evaluate quality and identify defects in a wide array of artifacts which include, but are not limited to documents, designs and code.\nStatic Analysis is an automated process that uses tools to analyze the code's syntax or structure.",
+  "frontside":"How does Static Testing differ from Dynamic Testing?",
+  "backside":"Static Testing does not involve executing the software and is done through reviews and analysis, while Dynamic Testing involves executing the software and validating its behavior against expected outcomes.",
   "needs_review":false
  },
  {
   "chapter":"3",
   "objective":"1",
-  "section":"0",
-  "frontside":"How does Static Testing differ from Dynamic Testing?",
-  "backside":"Static Testing does not involve executing the software and is done through reviews and analysis, while Dynamic Testing involves executing the software and validating its behavior against expected outcomes.",
+  "section":"1",
+  "frontside":"What is the role of Static Testing in analyzing design documents?",
+  "backside":"Static Testing helps ensure that design documents align with the requirements and that there are no logical errors or inconsistencies in the design.",
   "needs_review":false
  },
  {
@@ -613,14 +621,6 @@
   "section":"1",
   "frontside":"Why is it beneficial to perform Static Testing on requirements specifications?",
   "backside":"Performing Static Testing on requirements specifications helps identify inconsistencies, ambiguities, and missing requirements early in the development process, reducing the risk of defects.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"1",
-  "section":"1",
-  "frontside":"What is the role of Static Testing in analyzing design documents?",
-  "backside":"Static Testing helps ensure that design documents align with the requirements and that there are no logical errors or inconsistencies in the design.",
   "needs_review":false
  },
  {
@@ -643,16 +643,16 @@
   "chapter":"3",
   "objective":"2",
   "section":"2",
-  "frontside":"What are the main activities involved in the review process?",
-  "backside":"The main activities in the review process are:\n1. Planning\n2. Review Initiation\n3. Individual Review\n4. Communication and Analysis\n5. Fixing and Reporting.",
+  "frontside":"What is the Fixing and Reporting phase?",
+  "backside":"In the Fixing and Reporting phase, the author of the work product addresses the defects and issues identified during the review meeting, so that corrective actions can be followed-up.",
   "needs_review":false
  },
  {
   "chapter":"3",
   "objective":"2",
   "section":"2",
-  "frontside":"What happens during the planning phase of a review?",
-  "backside":"During the planning phase, the review process is initiated, and logistics are arranged. The objectives, scope, and timeline are defined, and review team members are selected.",
+  "frontside":"What occurs during Communication and Analysis?",
+  "backside":"During Communication and Analysis, the reviewers discuss the findings from their individual preparation, identify additional issues, and make decisions regarding the work product.",
   "needs_review":false
  },
  {
@@ -675,56 +675,16 @@
   "chapter":"3",
   "objective":"2",
   "section":"2",
-  "frontside":"What occurs during Communication and Analysis?",
-  "backside":"During Communication and Analysis, the reviewers discuss the findings from their individual preparation, identify additional issues, and make decisions regarding the work product.",
+  "frontside":"What happens during the planning phase of a review?",
+  "backside":"During the planning phase, the review process is initiated, and logistics are arranged. The objectives, scope, and timeline are defined, and review team members are selected.",
   "needs_review":false
  },
  {
   "chapter":"3",
   "objective":"2",
   "section":"2",
-  "frontside":"What is the Fixing and Reporting phase?",
-  "backside":"In the Fixing and Reporting phase, the author of the work product addresses the defects and issues identified during the review meeting, so that corrective actions can be followed-up.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"3",
-  "frontside":"What are the key roles in a review process?",
-  "backside":"Key roles in a review process include:\n1. Manager\n2. Author\n3. Moderator\n4. Scribe\n5. Reviewer\n6. Review Leader",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"3",
-  "frontside":"What is the responsibility of the author in a review?",
-  "backside":"The author is responsible for creating the work product being reviewed and addressing any defects identified during the review process.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"3",
-  "frontside":"What is the role of a reviewer in the review process?",
-  "backside":"Reviewers examine the work product to identify defects, improvements, and questions, and contribute to the discussions during the review meeting.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"3",
-  "frontside":"What are the responsibilities of the moderator in a review?",
-  "backside":"The moderator (also known as the facilitator) leads the review process, organizes review meetings, and ensures that the review process is followed and objectives are met.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"3",
-  "frontside":"What does the scribe do in the review process?",
-  "backside":"The scribe (also known as the recorder) records the defects, decisions, and actions during the review meeting and compiles the review report.",
+  "frontside":"What are the main activities involved in the review process?",
+  "backside":"The main activities in the review process are:\n1. Planning\n2. Review Initiation\n3. Individual Review\n4. Communication and Analysis\n5. Fixing and Reporting.",
   "needs_review":false
  },
  {
@@ -739,6 +699,46 @@
   "chapter":"3",
   "objective":"2",
   "section":"3",
+  "frontside":"What are the key roles in a review process?",
+  "backside":"Key roles in a review process include:\n1. Manager\n2. Author\n3. Moderator\n4. Scribe\n5. Reviewer\n6. Review Leader",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What is the role of a reviewer in the review process?",
+  "backside":"Reviewers examine the work product to identify defects, improvements, and questions, and contribute to the discussions during the review meeting.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What is the responsibility of the author in a review?",
+  "backside":"The author is responsible for creating the work product being reviewed and addressing any defects identified during the review process.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What does the scribe do in the review process?",
+  "backside":"The scribe (also known as the recorder) records the defects, decisions, and actions during the review meeting and compiles the review report.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What are the responsibilities of the moderator in a review?",
+  "backside":"The moderator (also known as the facilitator) leads the review process, organizes review meetings, and ensures that the review process is followed and objectives are met.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"3",
   "frontside":"What is the role of the review leader in the review process?",
   "backside":"The review leader takes overall responsibility for the review such as deciding who will be involved, and organizing when and where the review will take place.",
   "needs_review":false
@@ -747,32 +747,8 @@
   "chapter":"3",
   "objective":"2",
   "section":"4",
-  "frontside":"Define 'Informal Review'.",
-  "backside":"An informal review is an unstructured process without a formal process or documented results, often used for quick feedback and issue identification.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"4",
   "frontside":"What are the main types of reviews?",
   "backside":"The main types of reviews are informal reviews, walkthroughs, technical reviews, and inspections.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"4",
-  "frontside":"How do technical reviews and inspections differ?",
-  "backside":"Technical reviews focus on content and technical quality with a flexible process, while inspections are formal, structured reviews with defined roles and metrics.",
-  "needs_review":false
- },
- {
-  "chapter":"3",
-  "objective":"2",
-  "section":"4",
-  "frontside":"What is an 'Inspection' in the review process?",
-  "backside":"An inspection is a formal review process with defined roles and steps, aiming to identify defects and improve product quality by using metrics and follow-up activities.",
   "needs_review":false
  },
  {
@@ -794,17 +770,33 @@
  {
   "chapter":"3",
   "objective":"2",
-  "section":"5",
-  "frontside":"How does effective communication impact review success?",
-  "backside":"Effective communication among review participants fosters collaboration and ensures that findings and suggestions are understood and addressed.",
+  "section":"4",
+  "frontside":"Define 'Informal Review'.",
+  "backside":"An informal review is an unstructured process without a formal process or documented results, often used for quick feedback and issue identification.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"4",
+  "frontside":"How do technical reviews and inspections differ?",
+  "backside":"Technical reviews focus on content and technical quality with a flexible process, while inspections are formal, structured reviews with defined roles and metrics.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"4",
+  "frontside":"What is an 'Inspection' in the review process?",
+  "backside":"An inspection is a formal review process with defined roles and steps, aiming to identify defects and improve product quality by using metrics and follow-up activities.",
   "needs_review":false
  },
  {
   "chapter":"3",
   "objective":"2",
   "section":"5",
-  "frontside":"Why is the use of checklists important in reviews?",
-  "backside":"Checklists guide reviewers by providing a systematic approach to evaluating the work product, ensuring consistency and thoroughness in defect identification.",
+  "frontside":"How does effective communication impact review success?",
+  "backside":"Effective communication among review participants fosters collaboration and ensures that findings and suggestions are understood and addressed.",
   "needs_review":false
  },
  {
@@ -819,8 +811,24 @@
   "chapter":"3",
   "objective":"2",
   "section":"5",
+  "frontside":"What are the key success factors for reviews?",
+  "backside":"Key success factors for reviews include:\n1. Well-defined objectives\n2. Proper selection of review participants\n3. Adequate preparation\n4. Clear and concise documentation\n5. Effective communication\n6. Management support\n7. Use of checklists",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"5",
   "frontside":"How does proper selection of review participants contribute to review success?",
   "backside":"Selecting the right participants with the necessary skills and knowledge ensures that the review is thorough and constructive, leading to high-quality feedback.",
+  "needs_review":false
+ },
+ {
+  "chapter":"3",
+  "objective":"2",
+  "section":"5",
+  "frontside":"Why is the use of checklists important in reviews?",
+  "backside":"Checklists guide reviewers by providing a systematic approach to evaluating the work product, ensuring consistency and thoroughness in defect identification.",
   "needs_review":false
  },
  {
@@ -832,11 +840,635 @@
   "needs_review":false
  },
  {
-  "chapter":"3",
+  "chapter":"4",
+  "objective":"1",
+  "section":"0",
+  "frontside":"What are the main categories of test techniques?",
+  "backside":"The main categories of test techniques are:\n1. Black-box test techniques\n2. White-box test techniques\n3. Experience-based test techniques",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"1",
+  "section":"0",
+  "frontside":"Explain 'Experience-based Test Techniques'.",
+  "backside":"Experience-based test techniques rely on the tester's experience and intuition to guide testing. Experience-based test techniques are complementary to the Black-box and White-box test techniques.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
   "objective":"2",
+  "section":"0",
+  "frontside":"Name some common black-box test techniques.",
+  "backside":"Common black-box test techniques include equivalence partitioning, boundary value analysis, decision table testing, and state transition testing.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"2",
+  "section":"1",
+  "frontside":"Define 'Equivalence Partitioning'.",
+  "backside":"Equivalence partitioning is a black-box test technique that divides input data into partitions of equivalent data from which test cases are derived. The primary goal of equivalence partitioning is to reduce the number of test cases by selecting one representative value from each partition, assuming it covers all the values in that partition.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"2",
+  "section":"2",
+  "frontside":"Why is Boundary Value Analysis effective?",
+  "backside":"Boundary Value Analysis is effective because defects often occur at the boundaries of input domains where the software is more likely to behave incorrectly.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"2",
+  "section":"2",
+  "frontside":"Define 'Boundary Value Analysis'.",
+  "backside":"Boundary Value Analysis (BVA) is a black-box test technique that involves creating test cases that focus on the values at the boundaries of input domains. These boundaries include the minimum, and maximum values.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What is 'Decision Table Testing'?",
+  "backside":"Decision Table Testing is a black-box test technique that uses a decision table to represent combinations of inputs and their corresponding outputs, allowing for systematic coverage of input conditions and their corresponding outcomes, ensuring that no scenario is missed.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"2",
+  "section":"3",
+  "frontside":"When is Decision Table Testing most useful?",
+  "backside":"Decision Table Testing is most useful when dealing with complex business logic, where multiple combinations of inputs and outputs need to be tested.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"1",
+  "frontside":"What is 'Statement Testing'?",
+  "backside":"Statement Testing is a white-box test technique that involves executing individual statements in the code to ensure each statement is tested at least once.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"2",
+  "frontside":"Why is Branch Coverage more comprehensive than Statement Coverage?",
+  "backside":"Branch Coverage is more comprehensive than Statement Coverage because it ensures that all possible paths through the code are tested, including those that may not be executed by testing individual statements alone.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"2",
+  "frontside":"What is 'Branch Testing'?",
+  "backside":"Branch Testing is a white-box test technique that involves testing each possible branch in the code's control flow to ensure that all branches are executed at least once.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"3",
+  "frontside":"What is the value of White-box Testing?",
+  "backside":"The value of White-box Testing lies in its ability to uncover hidden errors within the internal logic of the code, such as unreachable code, security vulnerabilities, and logic errors, that may not be detected by black-box testing techniques.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"3",
+  "frontside":"In what scenarios is White-box Testing particularly valuable?",
+  "backside":"White-box Testing is particularly valuable in scenarios requiring high reliability, such as safety-critical systems, and in identifying security vulnerabilities by examining the internal logic and data flow.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"3",
+  "section":"3",
+  "frontside":"How does White-box Testing complement Black-box Testing?",
+  "backside":"White-box Testing complements Black-box Testing by focusing on the internal structure of the code, while black-box testing focuses on functionality. Together, they provide more comprehensive coverage and defect detection.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"1",
+  "frontside":"What areas should the tester have knowledge/experience for effective Error Guessing?",
+  "backside":"Experience with the application, knowledge of typical defect patterns, understanding of the software's domain, and familiarity with past defects.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"1",
+  "frontside":"What is 'Error Guessing'?",
+  "backside":"Error Guessing is a test technique where experienced testers use their intuition, experience, and knowledge of common defects to identify potential areas in the software where defects may occur.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"2",
+  "frontside":"What is 'Exploratory Testing'?",
+  "backside":"Exploratory Testing is an approach to software testing where the tester actively explores the software, designing and executing tests simultaneously, with the goal of discovering defects that are not easily found through formal test cases.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"2",
+  "frontside":"In what scenarios is Exploratory Testing particularly useful?",
+  "backside":"Exploratory Testing is particularly useful in scenarios where requirements are incomplete, time is limited, or the software is highly complex, allowing testers to adapt and focus on areas of high risk.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"2",
+  "frontside":"How does Exploratory Testing differ from scripted testing?",
+  "backside":"Exploratory Testing differs from scripted testing in that it does not follow predefined test cases. Instead, it relies on the tester's creativity, intuition, and experience to explore the software dynamically.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"3",
+  "frontside":"When is Checklist-based Testing particularly useful?",
+  "backside":"Checklist-based Testing is particularly useful in situations where time is limited, the testing process needs to be standardized, or when testing must cover a wide range of conditions consistently.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"3",
+  "frontside":"What is 'Checklist-based Testing'?",
+  "backside":"Checklist-based Testing is a test technique that uses a checklist of items, conditions, or tasks to guide the testing process. The checklist is typically derived from experience, standards, or previous test cases.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"3",
+  "frontside":"What are the limitations of Checklist-based Testing?",
+  "backside":"Limitations of Checklist-based Testing include potential rigidity, where the checklist may not adapt well to unexpected issues or creative testing approaches, and the risk of missing defects not covered by the checklist.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"4",
+  "section":"3",
+  "frontside":"What are the advantages of Checklist-based Testing?",
+  "backside":"Advantages of Checklist-based Testing include comprehensive coverage of test conditions, a structured approach to testing, and helping to identify overlooked areas or requirements.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"1",
+  "frontside":"What are the key components of a well-written user story?",
+  "backside":"A well-written user story typically includes:\n1. A clear description of the user role.\n2. The functionality or feature desired.\n3. The reason or benefit for the user.\n4. Acceptance criteria that define when the story is complete.\n\nGood user stories should be: Independent, Negotiable, Valuable, Estimable, Small, and Testable (INVEST).",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"1",
+  "frontside":"What is Collaborative User Story Writing?",
+  "backside":"Collaborative User Story Writing is a practice in Agile development where the entire team works together to create and refine user stories that capture the requirements and expectations of the end-users.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"1",
+  "frontside":"Define the 3 C's of User Story Writing",
+  "backside":"1. Card - The medium describing the user story such as an index card.\n2. Conversation - The explanation of how the software will be used.\n3. Confirmation - The acceptance critera.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"1",
+  "frontside":"What is a User Story?",
+  "backside":"A user story is a narrative that represents a feature that will be valuable to either a user or purchaser of a system/software.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"2",
+  "frontside":"What are Acceptance Criteria for User-Stories?",
+  "backside":"Acceptance Criteria are a set of predefined conditions that a user story or feature must meet to be considered complete and acceptable by the stakeholders.\n\nUser story acceptance criteria are often written in Scenario-oriented (Given/When/Then) or Rule-oriented (bullet point list) formats.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"2",
+  "frontside":"What are the key components of well-defined Acceptance Criteria?",
+  "backside":"Key components of well-defined Acceptance Criteria include:\n1. Specificity: Clearly defined requirements.\n2. Testability: Measurable and verifiable criteria.\n3. Alignment: Criteria should align with the overall business goals and user needs.",
+  "needs_review":false
+ },
+ {
+  "chapter":"4",
+  "objective":"5",
+  "section":"2",
+  "frontside":"What happens if a user story does not meet its Acceptance Criteria?",
+  "backside":"If a user story does not meet its Acceptance Criteria, it is not considered complete. The story must be reworked or refined until it satisfies all the criteria before it can be accepted by the stakeholders.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What is the purpose of a test plan?",
+  "backside":"The purpose of a test plan is to define the scope, approach, resources, schedule, and activities needed for the testing process. It ensures that testing is organized, controlled, and aligned with the project objectives.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"How does the test plan address risks?",
+  "backside":"The test plan includes a risk assessment section that identifies potential risks to the testing process, such as resource constraints or technical challenges, and outlines mitigation strategies to address them.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What is the 'Test Scope' in a test plan?",
+  "backside":"The 'Test Scope' defines the boundaries of testing, specifying what is and what is not to be tested. It ensures that testing efforts are focused on the critical areas of the system.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What are 'Test Objectives' in a test plan?",
+  "backside":"Test objectives outline the overall goals for testing, such as verifying specific functionalities, identifying defects, or ensuring the system meets certain performance criteria.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What are 'Test Deliverables' in a test plan?",
+  "backside":"Test deliverables are the artifacts produced during the testing process, such as test cases, test scripts, test data, and test results, which provide evidence of testing progress and outcomes.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What is the 'Test Environment' in a test plan?",
+  "backside":"The test environment specifies the hardware, software, network, and other infrastructure necessary to execute the test cases and simulate the production environment.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"1",
+  "frontside":"What are the key components of a test plan?",
+  "backside":"Key components of a test plan include:\n1. Test objectives\n2. Test scope\n3. Test resources\n4. Test environment\n5. Test schedule\n6. Risks and contingencies\n7. Test deliverables",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"2",
+  "frontside":"How do testers contribute to iteration planning?",
+  "backside":"Testers contribute to iteration planning by providing input on the testability of user stories, estimating the time and resources needed for testing, identifying risks, and ensuring that testing tasks are integrated into the iteration plan.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"2",
+  "frontside":"How do testers influence release planning?",
+  "backside":"In release planning, testers help determine the scope of testing for each release, provide insights on defect trends, ensure sufficient time for testing, and contribute to go/no-go decisions based on the quality of the software.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"3",
+  "frontside":"What are Exit Criteria in software testing?",
+  "backside":"Exit Criteria (also known as Definition of Done) are the conditions that must be met for testing activities to be considered complete. These criteria define the goals for testing and ensure that sufficient testing has been performed before software is released or moved to the next phase.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"3",
+  "frontside":"What are Entry Criteria in software testing?",
+  "backside":"Entry Criteria (also called Definition of Ready) are the pre-conditions that must be met before testing activities can begin. These criteria ensure that the prerequisites for testing are in place, such as complete test environment setup and availability of testable code.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"3",
+  "frontside":"What are some common Entry Criteria in a test plan?",
+  "backside":"Common Entry Criteria include:\n1. Availability of resources\n2. Availability of testware\n3. Initial quality level of a test objecct",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"3",
+  "frontside":"What are some common Exit Criteria in a test plan?",
+  "backside":"Common Exit Criteria include:\n1. All planned tests have been executed\n2. Test deliverables are completes\n3. Test coverage meets the required level\n4. All critical defects have been resolved or mitigated\n\nRunning out of time or budget can also be a valid exit criteria if the stakeholders have reviewed and acepted the risk to go live without further testing.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What is Wideband Delphi Estimation?",
+  "backside":"Wideband Delphi Estimation involves consulting experienced team members or experts who use their knowledge and past experience to estimate the time and effort required for testing.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What is Extrapolation Estimation?",
+  "backside":"In Extrapolation Estimation, measurements are made as early as possible. With enough observations, the effort-required for the remaining work can be approximated by extrapolating this data.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What are Estimation Techniques in software testing?",
+  "backside":"Estimation Techniques in software testing are methods used to predict the time, effort, and resources required to complete the testing process. They help ensure that testing activities are planned and scheduled accurately.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What is Ratio-based Estimation?",
+  "backside":"When estimating based on ratios, figures are collected from the previous projects in the organization, which makes it possible to derive \"standard\" ratios for similar projects.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What is Three-Point Estimation?",
+  "backside":"Three-Point Estimation uses three values for estimating a task: the optimistic(a), pessimistic(b), and most likely(m) effort. The final estimate (E) is derived by calculating a weighted average of these three values.\nE = (a + 4*m + b) / 6\n\nThe advantage of this technique is that it allows experts to calculate the measurement error via SD = (b - a) / 6",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"4",
+  "frontside":"What are some commonly used Estimation Techniques in software testing?",
+  "backside":"Common estimation techniques include:\n1. Estimation based on ratios\n2. Three-Point Estimation\n3. Wideband Delphi\n4. Extrapolation",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
   "section":"5",
-  "frontside":"What are the key success factors for reviews?",
-  "backside":"Key success factors for reviews include:\n1. Well-defined objectives\n2. Proper selection of review participants\n3. Adequate preparation\n4. Clear and concise documentation\n5. Effective communication\n6. Management support\n7. Use of checklists",
+  "frontside":"What is Test Case Prioritization?",
+  "backside":"Test Case Prioritization is the process of ranking test cases based on their importance, risk, and likelihood of uncovering defects, to ensure that the most critical test cases are executed first.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"5",
+  "frontside":"What are the three most commonly used test case prioritization strategies?",
+  "backside":"1. Risk-based\n2. Coverage-based\n3. Requirements-based\n\nLower priority test cases can be executed before higher priority test cases if the higher priority is dependent on the lower piority.\nSide note: A variant of Coverage-based prioritization, Additional Coverage prioritization, executes the highest coverage test case and each subsequent is determined by the highest additional coverage it achieves.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"5",
+  "frontside":"What factors are considered when prioritizing test cases?",
+  "backside":"A variety of factors can be taken into account. They may include:\n1. Risk level of the feature or functionality\n2. Business impact\n3. Customer usage patterns\n4. Defect-prone areas\n5. Regulatory requirements\n6. Time constraints",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"6",
+  "frontside":"What is the 'Test Pyramid'?",
+  "backside":"The Test Pyramid is a model that suggests how different types of automated tests should be organized in software development. It emphasizes having more unit tests at the bottom, fewer integration tests in the middle, and the least number of end-to-end or UI tests at the top.\nThe higher the layer, the lower the test granularity, test isolation and test execution time.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"6",
+  "frontside":"What types of tests are at the bottom of the Test Pyramid?",
+  "backside":"The bottom of the Test Pyramid consists of unit tests, which are small, fast, and test individual components or functions of the code in isolation. Typically, a great many of these tests are required to achieve a reasonable coverage.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"6",
+  "frontside":"What tests are at the top of the Test Pyramid?",
+  "backside":"At the top of the Test Pyramid are end-to-end (E2E) or UI tests. These tests validate the system as a whole from the user's perspective but are fewer in number due to their complexity, slowness, and high maintenance costs. Due to how large they are, only a few are needed to achieve reasonable coverage.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"6",
+  "frontside":"What tests are located in the middle of the Test Pyramid?",
+  "backside":"The middle of the Test Pyramid is where integration tests are located. These tests ensure that different components or modules of the application work together correctly.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"What is the focus of Quadrant Q4?",
+  "backside":"Quadrant Q4 includes technology-facing tests that critique the product, such as performance testing, security testing, and load testing, which help ensure non-functional requirements are met. These tests are often automated.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"How do the Testing Quadrants help Agile teams?",
+  "backside":"The Testing Quadrants help Agile teams ensure balanced testing by covering both functional and non-functional requirements, supporting development, and critiquing the product from both business and technical perspectives.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"What are the Testing Quadrants?",
+  "backside":"The Testing Quadrants is a model that organizes types of tests into four quadrants based on whether they are business-facing or technology-facing and whether they are used to support development or to critique the product.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"What is the focus of Quadrant Q2?",
+  "backside":"Quadrant Q2 includes business-facing tests that support development, such as functional tests, examples, and user story tests. These tests verify that the system meets the business requirements. These tests can be automated or manual.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"What is the focus of Quadrant Q3?",
+  "backside":"Quadrant Q3 focuses on business-facing tests that critique the product. This includes manual exploratory testing, usability testing, and user acceptance testing to evaluate how well the system works for end users. These tests are often manual.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"1",
+  "section":"7",
+  "frontside":"What is the focus of Quadrant Q1?",
+  "backside":"Quadrant Q1 focuses on technology-facing tests that support development, such as unit tests and component tests, which help ensure that the code works as expected.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"0",
+  "frontside":"What are the two main risk management activities?",
+  "backside":"1. Risk analysis consisiting of risk identification and assessment\n2. Risk control consisiting of risk mititgation and risk monitoring",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"1",
+  "frontside":"Define Risk and it's attributes",
+  "backside":"Risk is a potential event, hazard, threat, or situation whose occurrence causes an adverse effect. Risks are characterized by two factors:\n1. Risk likelihood (0-1) - the probability of the risk occurrence\n2. Risk imipact (harm) - the consequence of this occurrence",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"2",
+  "frontside":"What are Project Risks in software testing?",
+  "backside":"Project Risks are risks that affect the success of the project as a whole, including factors like budget, schedule, resources, and external dependencies that may impact the project's ability to meet deadlines and deliverables.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"2",
+  "frontside":"What are Product Risks in software testing?",
+  "backside":"Product Risks are risks related to the quality and functionality of the product, including risks that the software may not meet its functional or non-functional requirements, leading to issues like defects, performance problems, or usability concerns.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"2",
+  "frontside":"What are some common examples of Product Risks?",
+  "backside":"Common examples of Product Risks include:\n1. Loss of revenue, trust, reputation\n2. Poor performance or scalability issues\n3. Security vulnerabilities\n4. User dissatisfaction\n5. High maintenance costs",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"2",
+  "frontside":"What are some common examples of Project Risks?",
+  "backside":"Common examples of Project Risks include:\n1. Lack of skilled resources\n2. Tight deadlines or unrealistic schedules\n3. Supplier Issues\n4. Changes in project scope\n5. Miscommunication among stakeholders",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What is Product Risk Analysis in software testing?",
+  "backside":"Product Risk Analysis is the process of identifying, assessing, and prioritizing potential risks to provide an awareness of product risk in order to focus testing effort in a way that minimizes the risk impact to quality, performance, or functionality of the product being developed. Product Risk Analysis may influence the thoroughness and scope of testing.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"3",
+  "frontside":"What are the two components of Product Risk Analysis?",
+  "backside":"Product Risk Analysis consists of:\n1. Risk identification - generating a comprehensive list of risks\n2. Risk assessment - categorizing the identified risks, determining risk likelihood, level, impact, prioritization and proposing ways to mitigate them",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"3",
+  "frontside":"Describe some ways in which results of Product Risk Analysis are used.",
+  "backside":"1. Determine the scope of testing and coverage\n2. Determine the particular test levels and propose test types\n3. Estimate the test effort for each risk\n4. Prioritize testing to find critical defects as early as possible. ",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"4",
+  "frontside":"What are the two components of Product Risk Control?",
+  "backside":"Product Risk Analysis consists of:\n1. Risk mitigation - implementing actions proposed in risk assessment\n2. Risk monitoring - ensuring that the mitigation actions are effective, obtaining furhter information to improve risk assessment, and to identify emerging risks.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"4",
+  "frontside":"What actions can be taken to mitigate product risks by testing.",
+  "backside":"1. Selecting testers with the right level of skills and experience\n2. Applying the appropriate level of test independence\n3. Conducting reviews, static and dynamic analysis\n4. Apply the appropriate test techniques, test types and coverage levels",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"2",
+  "section":"4",
+  "frontside":"What is Product Risk Control in software testing?",
+  "backside":"Product Risk Control is the process of mitigating, managing, and monitoring identified product risks throughout the software development lifecycle to reduce their potential impact on the product's quality and functionality.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"3",
+  "section":"0",
+  "frontside":"Define Test Monitoring, Control and Completion, and explain the relationship between the three.",
+  "backside":"Test monitoring is concerned with the gathering of information about testing; it is the primary of the three. Test Control is successive to Monitoring; it uses the information from Test Monitoring to provide guidance and corrective actions to achieve the most effective and efficient testing. Test completion does not necessarily succeed Test Control, but it benefits from its activities since it consolidates experience, testware, and any other relevant data from completed test activities.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"3",
+  "section":"1",
+  "frontside":"What is the purpose of Test Metrics and which stage (Test Monitoring, Control, Completion) is responsible for gathering this information?",
+  "backside":"Test metrics show progress against the planned schedule and budget, the current test object quality, and the effectiveness of the test activities with respect to the objectives. Test Monitoring is concerned with the gathering of Test Metrics in order to support Test Control and Completion. Common metrics include:\n\n1. Project progress\n2. Test progress\n3. Risk metrics\n4. Cost metrics",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"3",
+  "section":"2",
+  "frontside":"What is the purpose and content of test reports?",
+  "backside":"Test reports summarize test information during and after testing. They must provide enough information to benefit subsequent testing and to make modifications to the test schedule, resources, or plan. Test progress reports are generated on a regular basis during test monitoring and control, while test completion reports are generated only once.",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"4",
+  "section":"0",
+  "frontside":"What is Configuration Management?",
+  "backside":"Configuration Management (CM) is a process for identifying, controlling, and tracking work products as configuration items. Such work products include test strategies, test plans, test results, and test logs. For a complex configuration item, CM records the items it consists of, their relationships, and versions. ",
+  "needs_review":false
+ },
+ {
+  "chapter":"5",
+  "objective":"5",
+  "section":"0",
+  "frontside":"What is Defect Management?",
+  "backside":"Defect Management is a process that outlines a workflow to handle individual anomalies from their discovery to their closure and rules for their classification. This workflow typically includes activities to log, analyze and classify anomalies. It also decides on a suitable response and whether to close the defect report.",
   "needs_review":false
  }
 ]
